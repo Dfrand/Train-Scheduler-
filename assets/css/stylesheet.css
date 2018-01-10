@@ -1,0 +1,47 @@
+body.wrap {
+	background-image: url("../images/train.jpeg");
+	opacity: .80;
+}
+
+.jumbotron {
+	color: white;
+}
+
+h2 {
+	border-radius: 3px;
+	background-color: blue;
+	color: white; 
+}
+
+.card-body {
+	border-radius: 10px;
+}
+
+.form-group {
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+#trainTable {
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+input {
+	font-weight: bold;
+}
+
+th {
+font-size: 30px
+}
+
+footer {
+	text-align: center;
+	color: white;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+#myVideo {
+	display: none;
+}

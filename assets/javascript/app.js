@@ -29,7 +29,6 @@ $("#addTrainBtn").on("click", function() {
 
     trainData.ref().push(newTrain);
 
-    alert("Train Added!");
 
     $("#trainNameInput").val("");
     $("#destinationInput").val("");
@@ -54,7 +53,20 @@ trainData.ref().on("child_added", function(snapshot) {
     console.log(minutes);
     console.log(arrival);
 
-// Appending new data to html
+    // Appending new data to html
     $("#trainTable > tBody").append("<tr><td>" + name + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>" + arrival + "</td><td>" + minutes + "</td><td>");
 
 })
+
+$(document).ready(function() {
+    var obj = document.createElement("audio");
+    obj.src = "assets/audio/horn.mp3";
+    obj.volume = 0.40;
+    obj.autoPlay = false;
+    obj.preLoad = true;
+
+    $(".btn").click(function() {
+        obj.play();
+    });
+
+});
